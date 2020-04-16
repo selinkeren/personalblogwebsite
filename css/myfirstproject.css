@@ -1,0 +1,204 @@
+@import url("..blogpost.css");
+@import url( "..header.css");
+@import url("..navbar.css");
+@import"Nova_Cut.zip" font;
+.grid {
+  display: grid;
+  grid-template-columns:1200px;
+  grid-template-rows:500px 1000px 1fr 250px;
+  grid-gap:5px;
+  justify-content: center;
+  grid-template-areas: 
+  " header "
+  " main "
+  " aside "
+  " footer ";
+}
+@media(min-width:700px){
+  .grid {
+    display: grid;
+    grid-template-columns:450px 450px;
+    grid-template-rows:400px 1500px 250px;
+    grid-gap:5px;
+    justify-content: center;
+    grid-template-areas: 
+    " header header header header"
+    " aside main main main "
+    " footer footer footer footer ";
+  }
+}
+@media only screen and (max-width: 768px) {
+ .grid {
+    width: 100%;
+    grid-template-columns:1000px;
+    grid-template-rows:400px 1000px 250px;
+  }
+}
+header,
+aside,
+main,
+footer {
+  background-color: #CCFBFF ;
+  padding: 1em;
+}
+header{ 
+  grid-area: header;
+}
+main{
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+.postcard{
+  box-shadow: 0 4px 8px 0 black;
+  transition:0.5s;
+  transition-property: initial;
+  border-style: hidden;
+  border-radius: 15px;
+  padding:25;
+}
+.postcard:hover{
+  box-shadow: 0 8px 16px 0 mediumorchid;
+}
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+section > img{
+  width:50%
+}
+.intro{
+  padding: 2px 16px;
+  text-align: center;
+}
+.flex-container{
+  display:flex;
+  flex-direction: column;
+  border: 5px solid blue;
+}
+.flex-container > div {
+  width: 2fr;
+  margin: 30px;
+  text-align: center;
+  line-height: 17px;
+  font-size: 15px;
+  flex-wrap: nowrap;
+}
+.flex-container > img{
+  width: 100%;
+}
+.rd1:hover{
+  background-color: hotpink;
+}
+.rd2:hover{
+  background-color: hotpink;
+}
+.rd3:hover{
+  background-color: hotpink;
+}
+main{
+  text-align:center;
+  font-size: 12px;
+}
+.flex-container2{
+  display: flex;
+  flex-direction: row;
+  width: 5fr;
+  height:0.5fr;
+  border:5px outset indigo;
+  justify-content: center;
+  align-items: center;
+}
+.flex-container2 > div{
+  background-color: pink;
+  color:grey;
+  max-width: 120;
+  margin:5px;
+  border-radius: 5px;
+  flex-direction: column;
+  margin:10px;
+  height: 185px;
+  text-align: center;
+  padding: 5px;
+  justify-content: space-between;
+ }
+ .myself:hover{
+   background-color: hotpink;
+ }
+ .footerli:hover{
+   background-color: hotpink;
+ }
+ .socialmedia:hover{
+   background-color: hotpink;
+ }
+ .fa:hover{
+   background-color: purple;
+ }
+.fa {
+  padding: 5px;
+  font-size: 10px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.footerli{
+  list-style-type: square;
+  background-color: pink;
+  text-align: center;
+  padding:5;
+  font-size: 12px;
+}
+.myself{
+  font-size: 13px;
+  text-align: left;
+}
+body{
+  font-family: 'Nova Cut', cursive;
+  color:rgb(42, 42, 173);
+}
+@media(max-width:900px){
+  body{
+    font-size: 5px;
+  }
+  .grid{
+    display:grid;
+    flex-direction: column;
+  }
+}
+
+
+
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+

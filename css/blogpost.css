@@ -1,0 +1,115 @@
+@import url("..navbar.css");
+@import"Nova_Cut.zip" font;
+@import url( "..header.css");
+.postgrid{
+    display:grid;
+    grid-template-columns:900px 400px;
+    grid-template-rows:400px 450px;
+    grid-gap:5px;
+    width: 1300px;
+    margin:5px;
+    justify-content: center;
+    grid-template-areas:
+    "header header "
+    "main aside"
+    "main aside";    
+}
+.writter{
+    flex-direction: column;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area:main;
+    background-color: #CCFBFF;
+    padding:1em;
+}
+aside{
+    grid-area:aside;
+    background-color: #CCFBFF;
+    padding:1em;
+}
+body{
+  font-family: 'Nova Cut', cursive;
+  color:rgb(42, 42, 173);
+}
+.blogflex> div{
+    display:flex;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 15;
+    text-align: left;
+    text-overflow: ellipsis;    
+}
+.card {
+    box-shadow: 0 5 10 0 rgb(31, 12, 31);
+    margin: auto;
+    text-align: center; 
+}
+.title {
+    color: rgb(247, 150, 206);
+    font-size: 18px;
+}
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(56, 12, 56);
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+} 
+.biosocial {
+    text-decoration: none;
+    font-size: 20px;
+    color:rgb(56, 12, 56);
+} 
+button:hover, a:hover {
+    opacity: 0.7;
+}
+.usercomment{
+    border: 5px solid  rgb(44, 19, 44);
+    text-align:left;
+    font-size: 12;
+}
+hr{
+    size:4;
+    width: 100%;
+}
+.writter{
+    border: 5px solid rgb(44, 19, 44);
+    text-align:center;
+    padding-top:5;
+    margin-block-end:15px;
+}
+.mainflex > div{
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content:space-between;
+    padding: 10px;
+    text-align: center;
+}
+.mainheader{
+    border: 5px solid rgb(54, 27, 54);
+
+}
+.mainshare{
+    border: 5px solid rgb(54, 27, 54);
+    margin: 10px;
+}
+.mainother{
+    border: 5px solid rgb(54, 27, 54);
+    max-height:50 px;
+}
+.mainother > div{
+   display: flex;
+   flex: 1fr;
+   flex-direction: column;
+   text-align:left;
+   float: left;
+   width:33.33%
+}
